@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 80px 0 0 0;
+}
+header h1 {
+    color: #8fc9fc;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    pad: 0 0 0 5px;
+}
+section {
+    background: #0173d6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section ul {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    position: relative;
+}
+section ul li {
+    z-index: 1;
+    cursor: pointer;
+}
+section ul li span {
+    background: #025caa;
+}
+.menu {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu div {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.menu div span {
+    width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.menu div span:nth-child(2) {
+    width: 250px;
+}
+section ul li:nth-of-type(2) div {
+    align-items: center;
+}
+section ul li:nth-of-type(3) div {
+    align-items: flex-end;
+}
+section ul > div {
+    position: absolute;
+}
+section ul > div div span {
+    z-index: 2;
+    background: #f7d413;
+    box-shadow: 0 0 20px #f7d413;
+    transition: 0.5s;
+}
+section ul > div div span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+section ul > div div span:nth-child(3) {
+    transition-delay: 0.2s;
+}
+.menu-1 div span:nth-child(1),
+.menu-1 div span:nth-child(3) {
+    transform: translateX(425px);
+}
+.menu-1 div span:nth-child(2) {
+    transform: translateX(400px);
+}
+.menu-2 div span:nth-child(1),
+.menu-2 div span:nth-child(3) {
+    transform: translateX(850px);
+}
+.menu-2 div span:nth-child(2) {
+    transform: translateX(800px);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0 50px 0;
+    color: #043c6d;
+    text-align: center;
+}
+footer h2 {
+    padding: 0 0 0 5px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+footer p {
+    padding: 5px 0 0 11px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+}
